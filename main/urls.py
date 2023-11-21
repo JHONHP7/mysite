@@ -5,5 +5,6 @@ from . import views
 # Lista de padrões de URL associados a funções de visualização
 urlpatterns = [
     # Mapeia a URL raiz para a função 'index' no arquivo 'views.py'
-    path("<str:name>", views.index, name="index"),
+    path("<int:id>", views.index, name="index"),
+    path("", views.home, name="home"),
 ]
